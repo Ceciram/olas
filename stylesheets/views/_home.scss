@@ -1,0 +1,288 @@
+html, body, .container {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.navbar-nav {
+	text-align: center;
+	float: none;
+	li {
+		float: right;
+		display: inline-block;
+		font-size: 16px;
+		padding: 0 20px;
+		@media screen and (max-width:#{$screen-phone}){
+			display: block;
+		}
+	}
+}
+nav.navbar.navbar-default {
+  margin: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-color: transparent;
+  background-color: rgba(72, 178, 197, 0.9);
+  a {
+  color: snow;
+	}
+}
+
+
+.header {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(../img/fondo6.jpg) no-repeat center center scroll;
+	background-size: cover;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+	h1 {
+	  margin: 0;
+	  padding: 0;
+	  font-size: 4.5em;
+	  font-weight: 700;
+	}
+	h3 {
+  	font-size: 24px;
+  	margin-top: 20px;
+  margin-bottom: 10px;
+}
+}
+
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+}
+.btn-lg {
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+   background-image: none;
+  border: 1px solid transparent;
+}
+
+
+
+.about {
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.white {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.lead {
+  font-size: 21px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  p{
+  	margin: 0 0 10px;
+  }
+}
+
+
+/*seccion paquetes*/
+.row.text-center {
+  padding: 0px 12%;
+}
+.services {
+  padding: 50px 0;
+}
+.bg-primary {
+  color: #fff;
+  background-color: #51C8DD;
+}
+hr.small {
+  max-width: 100px;
+}
+.service-item {
+  margin-bottom: 30px;
+	p {
+  margin: 0 12% 10px;
+  color: paleturquoise;
+  font-size: 16px;
+}
+}
+span.glyphicon.glyphicon-tint {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 50%;
+  color: #51C8DD;
+  font-size: 50px;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+strong {
+  font-weight: 700;
+}
+
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: rgb(255,255,255);
+}
+
+.btn-light:hover {
+	background-color: #ECEFF1;
+}
+
+/*FONDO ESTATICO*/
+.cd-fixed-bg {
+	/*min-height: 100%;*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/fondo7.jpg");
+  height: 300px;
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("img/fondo3.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("img/cd-background-4.jpg");
+}
+ 
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+
+
+/*FRASE INSPIRADORA*/
+h5 {
+  margin: 0;
+  font-size: 350%;
+  color: white;
+}
+aside.cd-fixed-bg.cd-bg-1 {
+  padding: 10% 0;
+}
+span.negro {
+  color: black;
+  font-family: fantasy;
+}
+
+/*SECCION ENTRENADORES*/
+.row.alinear {
+  margin: 0 10%;
+}
+section.entrenadores {
+  /* width: 100%; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.img-center {
+  margin: 0 auto;
+}
+.img-circle {
+  border-radius: 50%;
+}
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*span.coach {
+  visibility: hidden;
+  position: relative;
+  top: -100px;
+  font-size: 20px;
+  color: red;
+}*/
+
+.img-entrenador {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.img-entrenador:hover {
+  opacity: 0.3;
+}
+/*span.coach:hover {
+  visibility: hidden;
+}*/
+
+.col-lg-4.col-sm-6.text-center {
+  padding: 2% 0;
+}
+
+/*CONTACTANOS*/
+section.contactos.text-center {
+  background-image: url(../img/surf.jpg);
+  padding: 5% 30%;
+}
+button.btn.btn-primary {
+  margin: 5%;
+}
+.opacity {
+  background-color: rgba(220, 169, 115, 0.3);
+  padding: 2% 5%;
+}
+
+
+/*FOTTER*/
+.fotter {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
