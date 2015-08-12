@@ -3,6 +3,9 @@ html, body, .container {
 	height: 100%;
 }
 
+h1, h2, ul.nav.navbar-nav>li {
+  font-family: 'Merienda', cursive;
+}
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -31,7 +34,7 @@ nav.navbar.navbar-default {
   z-index: 100;
   width: 100%;
   border-color: transparent;
-  background-color: rgba(72, 178, 197, 0.9);
+  background-color: rgba(35, 84, 127, 0.8);
   a {
   color: snow;
 	}
@@ -43,8 +46,8 @@ nav.navbar.navbar-default {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: url(../img/fondo6.jpg) no-repeat center center scroll;
-	background-size: cover;
+/*	background: url(../img/fondo8.jpg) no-repeat center center scroll;
+	background-size: cover;*/
 }
 
 .text-vertical-center {
@@ -56,6 +59,7 @@ nav.navbar.navbar-default {
 	  padding: 0;
 	  font-size: 4.5em;
 	  font-weight: 700;
+    color: #056295;
 	}
 	h3 {
   	font-size: 24px;
@@ -67,7 +71,7 @@ nav.navbar.navbar-default {
 .btn-dark {
   border-radius: 0;
   color: #fff;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(1, 67, 127, 0.6);
 }
 .btn-lg {
 padding: 10px 16px;
@@ -93,6 +97,14 @@ border-radius: 6px;
 
 .about {
   padding: 50px 0;
+  .video-clases {
+    margin-bottom: 1em;
+  }
+  p.somos {
+    padding: 3em 0em 0em;
+    line-height: 1.7;
+    color: gray;
+  }
 }
 
 h2 {
@@ -100,24 +112,26 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+  color: #1C8CB3;
 }
 
-.white {
+/*.white {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
   color: white;
-}
+}*/
 
 .lead {
-  font-size: 21px;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 3em;
+  font-size: 18px !important;
   font-weight: 300;
   line-height: 1.4;
+  margin-top: 2em;
+  color: #4EC7D6;
   p{
-  	margin: 0 0 10px;
+    margin: 0 0 10px;
   }
 }
 
@@ -128,33 +142,55 @@ h2 {
 }
 .services {
   padding: 50px 0;
+  .service-item {
+    margin-bottom: 30px;
+    p {
+      margin: 0 12% 10px;
+      color: paleturquoise;
+      font-size: 16px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      background-color: white;
+      .categoria {
+        background-color: #00486B;
+        padding: 0.5em;
+        h4 {
+          font-size: 22px;
+          padding-top: 12px;
+        }
+      }
+      li.detalle {
+        border-top: 1px solid #51C8DD;
+        padding: 14px 7px;
+        color: #51C8DD;
+        font-size: 16px;
+      }
+    }
+  }
 }
 .bg-primary {
   color: #fff;
-  background-color: #51C8DD;
+  background-image: url(../img/fondo3.jpg);
+  background-size: cover;
 }
 hr.small {
   max-width: 100px;
 }
-.service-item {
-  margin-bottom: 30px;
-	p {
-  margin: 0 12% 10px;
-  color: paleturquoise;
-  font-size: 16px;
-}
-}
+
 span.glyphicon.glyphicon-tint {
   position: relative;
   display: inline-block;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
   vertical-align: middle;
   background-color: white;
   border-radius: 50%;
-  color: #51C8DD;
-  font-size: 50px;
+  color: #289AC1;
+  font-size: 40px;
+  top: 23px;
 }
 h4 {
   font-size: 18px;
@@ -167,13 +203,15 @@ strong {
 
 .btn-light {
   border-radius: 0;
-  color: #333;
-  background-color: rgb(255,255,255);
+  color: white;
+  background-color: #4EC7D6;
+  transition: 0.8s;
+  &:hover {
+    background-color: #289AC1;
+    color: white;
+  }
 }
 
-.btn-light:hover {
-	background-color: #ECEFF1;
-}
 
 /*FONDO ESTATICO*/
 .cd-fixed-bg {
@@ -185,11 +223,10 @@ strong {
 }
  
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url("../img/fondo7.jpg");
-  height: 300px;
+  background-image: url("../img/fondo1.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("img/fondo3.jpg");
+  background-image: url("../img/fondo5.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("img/cd-background-3.jpg");
@@ -231,32 +268,67 @@ section.entrenadores {
 .img-center {
   margin: 0 auto;
 }
-.img-circle {
-  border-radius: 50%;
-}
-h3 {
-  font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 
-/*span.coach {
-  visibility: hidden;
-  position: relative;
-  top: -100px;
-  font-size: 20px;
-  color: red;
-}*/
-
+.one {
+  background-image: url(../img/face61.jpg);
+  background-size: cover;
+  &:hover {
+    background-image: url(../img/face62.jpg);
+    background-size:cover;
+  }
+}
+.two {
+  background-image: url(../img/face41.jpg);
+  background-size: cover;
+  &:hover {
+    background-image: url(../img/face42.jpg);
+    background-size:cover;
+  }
+}
+.three {
+  background-image: url(../img/face71.jpg);
+  background-size: cover;
+  &:hover {
+    background-image: url(../img/face72.jpg);
+    background-size:cover;
+  }
+}
 .img-entrenador {
+  position: relative;
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  border-radius: 50%;
+  transition: 2s;
+  h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -34px;
+  }
+  .descripcion {
+    display: none;
+    text-align: left;
+    color: gray;
+  }
+  &:hover{
+    border-radius: 50%;
+    left: -80px;
+    .descripcion {
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      left: 206px;
+      width: 80%;
+      top: 40px;
+    }
+    h3 {
+      color: #51C8DD;
+    }
+  }
 }
 
-.img-entrenador:hover {
-  opacity: 0.3;
-}
 /*span.coach:hover {
   visibility: hidden;
 }*/
@@ -267,14 +339,15 @@ h3 {
 
 /*CONTACTANOS*/
 section.contactos.text-center {
-  background-image: url(../img/surf.jpg);
   padding: 5% 30%;
+  background-image: url(../img/fondo3.jpg);
+  background-size: cover;
 }
 button.btn.btn-primary {
   margin: 5%;
 }
 .opacity {
-  background-color: rgba(220, 169, 115, 0.3);
+  background-color: rgba(77, 175, 187, 0.22);
   padding: 2% 5%;
 }
 
